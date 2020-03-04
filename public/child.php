@@ -93,7 +93,7 @@
                     <?php if ($_SESSION['status'] == "PENDING") { ?>
                         <h1>Almost there!</h1>
                         <p>
-                            Waiting for your parents consent to use the FA Demo Web App.
+                            Waiting for your parents consent to use the Paw Patrol Demo Web App.
                             <br/><br/>
                             Do not close this window!
                         </p>

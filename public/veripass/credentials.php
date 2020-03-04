@@ -12,7 +12,8 @@ if ($_SERVER['HTTP_HOST'] == "localhost:8053") {
     $ini['apiServerJS'] = $ini['apiServer'];
     $ini['vprServer'] = $ini['apiServerJS'];
     $ini['ssl'] = "enabled";
-} else if ($_SERVER['HTTP_HOST'] == "demo.site") {
+    //  the default case if nothing matched
+} else {
     $ini['apiServer'] = "api.veripass.uk";
     $ini['apiServerJS'] = $ini['apiServer'];
     $ini['vprServer'] = $ini['apiServerJS'];
@@ -23,7 +24,7 @@ $server = $ini['apiServer'];
 $apiKey = $ini['apiKey'];
 $apiSalt = $ini['apiSalt'];
 $service = "demo";
-$description = "FA Demo";
+$description = "Paw Patrol Demo";
 $ws = $ini['ssl']=="enabled" ? "wss" : "ws";
 $ht = $ini['ssl']=="enabled" ? "https" : "http";
 
